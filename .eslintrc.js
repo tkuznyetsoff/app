@@ -37,6 +37,9 @@ module.exports = {
 		'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
 		'comma-dangle': ['error', 'never'],
 		'indent': ['error', 'tab'],
-		'no-tabs': 'off'
+		'no-tabs': 'off',
+		'no-param-reassign': 'off',
+		'import/prefer-default-export': 'off',
+		'no-new': 'off'
 	},
 }

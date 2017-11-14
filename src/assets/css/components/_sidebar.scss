@@ -1,0 +1,49 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 7em;
+	background-color: #554466;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&-list {
+		padding: 0;
+		margin: 0;
+
+		&__item {
+			display: block;
+			text-align: center;
+
+			a {
+				display: block;
+				position: relative;
+				padding: 1em;
+				color: white;
+				text-decoration: none;
+				transition: background-color 0.1s ease-in-out;
+
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.1);
+				}
+
+				&.router-link-exact-active,
+				&.router-link-active {
+					background: rgba(0, 0, 0, 0.25);
+				}
+
+				i {
+					display: block;
+					margin: 0.25em 0 0 0;
+				}
+
+				p {
+					margin: 0.5em 0 0 0;
+				}
+			}
+		}
+	}
+};
